@@ -11,8 +11,8 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes),
     provideHttpClient(), 
-    provideClientHydration(withEventReplay()),
+    provideClientHydration(),
     // to avoid problems with the url on production
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
+    // { provide: LocationStrategy, useClass: HashLocationStrategy }
   ]
 };
