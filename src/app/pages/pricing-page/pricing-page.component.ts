@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+
+@Component({
+  selector: 'pricing-page',
+  imports: [],
+  templateUrl: './pricing-page.component.html',
+  styleUrl: './pricing-page.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export default class PricingPageComponent {
+
+}
