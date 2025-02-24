@@ -1,0 +1,21 @@
+<div class="grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
+
+    <!-- 12 -->
+     <!-- pokemon card -->
+    @if ( pokemons()) {
+      @for (pokemon of pokemons(); track pokemon.id) {
+        <pokemon-card [pokemon]="pokemon" />
+      }
+    } @else {
+      <div class="col-span-5 text-center border-white h-28 flex justify-center items-center">
+        No hay Pokemons
+      </div> -->
+    }
+
+
+    <!-- Empty
+    <div class="col-span-5 text-center border-white h-28 flex justify-center items-center">
+      No hay Pokemons
+    </div> -->
+
+</div>
